@@ -30,7 +30,7 @@ help_list = []
 durability_star_list = []
 price_star_list = []
 design_star_list = []
-delievery_star_list = []
+delivery_star_list = []
 
 # 리뷰 페이지 스크래핑
 while True:
@@ -63,13 +63,13 @@ while True:
             durability_star = detail_star_list[0]
             price_star = detail_star_list[1]
             design_star = detail_star_list[2]
-            delievery_star = detail_star_list[3]
+            delivery_star = detail_star_list[3]
 
         else:
             durability_star = 'null'
             price_star = 'null'
             design_star = 'null'
-            delievery_star = 'null'
+            delivery_star = 'null'
         
         # 각 값들을 리스트에 append
         user_name_list.append(user_name)
@@ -80,7 +80,7 @@ while True:
         durability_star_list.append(durability_star)
         price_star_list.append(price_star)
         design_star_list.append(design_star)
-        delievery_star_list.append(design_star)
+        delivery_star_list.append(design_star)
         
     # 페이지 이동 버튼 클릭 
     try:
@@ -97,7 +97,7 @@ while True:
     'durability_star' : durability_star_list,
     'price_star' : price_star_list,
     'design_star' : design_star_list,
-    'delievery_star' : delievery_star_list,
+    'delivery_star' : delivery_star_list,
     'date' : date_list,
     'review': review_list,
     'help': help_list
@@ -108,7 +108,7 @@ df = pd.DataFrame(data=element_list, columns=['user_name',
                                               'durability_star',
                                               'price_star',
                                               'design_star',
-                                              'delievery_star',
+                                              'delivery_star',
                                               'date', 
                                               'review',
                                               'help'])
