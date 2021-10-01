@@ -26,5 +26,4 @@ for i in review:
 print(review_)
 
 review_df = pd.DataFrame(review_, columns = ['review_cleaned'])
-
 review_df.to_csv('review_final_cleaned.csv', encoding='utf-8-sig')
